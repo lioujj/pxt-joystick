@@ -29,15 +29,8 @@ namespace joystick {
         pins.setPull(mySWPin, PinPullMode.PullUp);
     }
 
-    //% blockId=setPullMode block="set joystick SW pin PullMode %myPullMode" blockExternalInputs=false
-    //% weight=60
-    export function setPullMode(myPullMode: PinPullMode = PinPullMode.PullUp): void {
-        pins.setPull(mySWPin, myPullMode);
-    }
-
-
-
     //% blockId=getJoystickValue block="joystick value of %myType"
+    //% weight=60
     export function getJoystickValue(myType: valueType): number {
         switch (myType) {
             case valueType.X: return pins.analogReadPin(myXPin);
@@ -45,5 +38,11 @@ namespace joystick {
             case valueType.SW: return pins.digitalReadPin(mySWPin);
             default: return 0;
         }
+    }
+
+    //% blockId=setPullMode block="set joystick SW pin PullMode %myPullMode" blockExternalInputs=false
+    //% weight=50
+    export function setPullMode(myPullMode: PinPullMode = PinPullMode.PullUp): void {
+        pins.setPull(mySWPin, myPullMode);
     }
 }    
