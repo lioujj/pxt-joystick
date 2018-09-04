@@ -14,20 +14,29 @@ namespace joystick {
         SW
     }
 
-    //% blockId=setJoystick block="set joystick pins : X pin %XPin|Y pin %YPin|SW pin %SWPin|SW pin pullmode %myPullMode" blockExternalInputs=false
-    //% weight=60
+    //% blockId=setJoystick block="set joystick pins : X pin %XPin|Y pin %YPin|SW pin %SWPin" blockExternalInputs=false
+    //% weight=70
     //% XPin.fieldEditor="gridpicker" XPin.fieldOptions.columns=4
     //% XPin.fieldOptions.tooltips="false" XPin.fieldOptions.width="300"
     //% YPin.fieldEditor="gridpicker" YPin.fieldOptions.columns=4
     //% YPin.fieldOptions.tooltips="false" YPin.fieldOptions.width="300"
     //% SWPin.fieldEditor="gridpicker" SWPin.fieldOptions.columns=4
     //% SWPin.fieldOptions.tooltips="false" SWPin.fieldOptions.width="300"
-    export function setJoystick(XPin: AnalogPin, YPin: AnalogPin, SWPin: DigitalPin, myPullMode: PinPullMode = PinPullMode.PullUp): void {
+    export function setJoystick(XPin: AnalogPin, YPin: AnalogPin, SWPin: DigitalPin): void {
         myXPin = XPin;
         myYPin = YPin;
         mySWPin = SWPin;
+        pins.setPull(mySWPin, PinPullMode.PullUp);
+    }
+
+    //% blockId=setPullMode block="set joystick SW pin PullMode %myPullMode" blockExternalInputs=false
+    //% weight=60
+    export function setPullMode(myPullMode: PinPullMode = PinPullMode.PullUp): void {
         pins.setPull(mySWPin, myPullMode);
     }
+
+
+
     //% blockId=getJoystickValue block="joystick value of %myType"
     export function getJoystickValue(myType: valueType): number {
         switch (myType) {
