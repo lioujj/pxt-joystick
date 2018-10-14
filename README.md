@@ -12,6 +12,7 @@ This is the JoyStick blocks for micro:bit
 ## Sample1
 ![image](sample1.png)
 ## Sample2
+Event Handler to control the behavior where Joystick button is onPressed or onReleased
 ![image](sample2.png)
 
 ## License
