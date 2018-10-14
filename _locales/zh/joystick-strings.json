@@ -1,0 +1,12 @@
+{
+    "joystick|block": "搖桿",
+    "joystick.setJoystick|block": "設定搖桿腳位 : X軸腳位 %XPin|Y軸腳位 %YPin|按鈕腳位 %SWPin",
+    "joystick.setPullMode|block": "設定按鈕腳位電阻模式 %myPullMode",
+    "joystick.valueType.X|block":"X軸",
+    "joystick.valueType.Y|block":"Y軸",
+    "joystick.pushType.down|block":"按下",
+    "joystick.pushType.up|block":"放開",
+    "joystick.getJoystickValue|block": "取得搖桿值： %myType",
+    "joystick.getJoystickSW|block": "搖桿按鈕按下",
+    "joystick.onSWchanged|block": "當搖桿按鈕 %dir"
+}
