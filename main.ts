@@ -1,4 +1,4 @@
-//% weight=0 color=#920dc6 icon="\uf047" block="joystick"
+//% weight=0 color=#920dc6 icon="\uf11b" block="joystick"
 namespace joystick {
 
     let myXPin = AnalogPin.P0;
@@ -9,11 +9,14 @@ namespace joystick {
         //% block="X"
         X,
         //% block="Y"
-        Y,
-        //% block="SW"
-        SW
+        Y
     }
-
+    export enum pushType {
+        //% block="pressed"
+        down = PulseValue.High,
+        //% block="released"
+        up = PulseValue.Low
+    }
     //% blockId=setJoystick block="set joystick pins : X pin %XPin|Y pin %YPin|SW pin %SWPin" blockExternalInputs=false
     //% weight=70
     //% XPin.fieldEditor="gridpicker" XPin.fieldOptions.columns=4
@@ -35,14 +38,26 @@ namespace joystick {
         switch (myType) {
             case valueType.X: return pins.analogReadPin(myXPin);
             case valueType.Y: return pins.analogReadPin(myYPin);
-            case valueType.SW: return pins.digitalReadPin(mySWPin);
             default: return 0;
         }
     }
 
-    //% blockId=setPullMode block="set joystick SW pin PullMode %myPullMode" blockExternalInputs=false
+    //% blockId=getJoystickSW block="joystick SW pressed"
+    //% weight=55
+    export function getJoystickSW(): boolean {
+        return (pins.digitalReadPin(mySWPin) == 0 ? true : false)
+    }
+
+    //% blockId=onSWchanged block="on joystick SW %dir" blockExternalInputs=false
     //% weight=50
+    export function onSWchanged(dir: pushType, handler: Action): void {
+        pins.onPulsed(mySWPin, <number>dir, handler);
+    }
+
+    //% blockId=setPullMode block="set joystick SW pin PullMode %myPullMode" blockExternalInputs=false
+    //% weight=40
     export function setPullMode(myPullMode: PinPullMode = PinPullMode.PullUp): void {
         pins.setPull(mySWPin, myPullMode);
     }
-}    
+
+}

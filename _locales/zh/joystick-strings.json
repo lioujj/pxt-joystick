@@ -4,6 +4,9 @@
     "joystick.setPullMode|block": "設定按鈕腳位電阻模式 %myPullMode",
     "joystick.valueType.X|block":"X軸",
     "joystick.valueType.Y|block":"Y軸",
-    "joystick.valueType.SW|block":"按鈕",
-    "joystick.getJoystickValue|block": "取得搖桿值： %myType"
+    "joystick.pushType.down|block":"按下",
+    "joystick.pushType.up|block":"放開",
+    "joystick.getJoystickValue|block": "取得搖桿值： %myType",
+    "joystick.getJoystickSW|block": "按鈕按下",
+    "joystick.onSWchanged|block": "當按鈕 %dir"
 }
