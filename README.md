@@ -1,6 +1,7 @@
 # joystick
 
-這是專為micro:bit提供的搖桿積木(This is the JoyStick blocks for micro:bit)
+這是專為micro:bit提供的搖桿積木
+This is the JoyStick blocks for micro:bit
 
 ## License
 

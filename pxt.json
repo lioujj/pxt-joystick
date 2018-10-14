@@ -1,7 +1,7 @@
 {
     "name": "joystick",
     "version": "0.0.2",
-    "description": "This is the JoyStick blocks for micro:bit",
+    "description": "這是專為micro:bit提供的搖桿積木(This is the JoyStick blocks for micro:bit)",
     "license": "MIT",
     "dependencies": {
         "core": "*"
