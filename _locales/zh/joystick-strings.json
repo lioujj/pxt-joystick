@@ -7,6 +7,6 @@
     "joystick.pushType.down|block":"按下",
     "joystick.pushType.up|block":"放開",
     "joystick.getJoystickValue|block": "取得搖桿值： %myType",
-    "joystick.getJoystickSW|block": "按鈕按下",
+    "joystick.getJoystickSW|block": "搖桿按鈕按下",
     "joystick.onSWchanged|block": "當搖桿按鈕 %dir"
 }
