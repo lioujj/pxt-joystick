@@ -7,7 +7,7 @@ This is the JoyStick blocks for micro:bit
 ![image](circuit.png)
 ## Video
 [![sample video](https://img.youtube.com/vi/Ia3eWbcF4pE/0.jpg)](https://www.youtube.com/watch?v=Ia3eWbcF4pE)
-{media}(youtube::-Ia3eWbcF4pE::420)
+<iframe width="420" height="315" src="http://www.youtube.com/embed/-Ia3eWbcF4pE" frameborder="0" allowfullscreen></iframe>
 ## Sample1
 ![image](sample1.png)
 ## Sample2
