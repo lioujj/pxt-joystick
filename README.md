@@ -3,6 +3,9 @@
 這是專為micro:bit提供的搖桿積木
 This is the JoyStick blocks for micro:bit
 
+## circuit
+![image](circuit.png)
+
 ## License
 
 * MIT
