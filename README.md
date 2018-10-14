@@ -6,10 +6,9 @@ This is the JoyStick blocks for micro:bit
 ## Circuit
 ![image](circuit.png)
 
-##Sample1
+## Sample1
 ![image](sample1.png)
-
-##Sample2
+## Sample2
 ![image](sample2.png)
 
 ## License
