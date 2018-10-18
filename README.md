@@ -6,7 +6,7 @@ This is the JoyStick blocks for micro:bit
 ## Author
 Liou Zheng-Ji\
 劉正吉\
-[link to myPage!](https://sites.google.com/jes.mlc.edu.tw/ljj/)
+[my page, https://sites.google.com/jes.mlc.edu.tw/ljj/](https://sites.google.com/jes.mlc.edu.tw/ljj/)
 
 ## Circuit
 ![image](circuit.png)
