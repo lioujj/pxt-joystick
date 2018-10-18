@@ -3,6 +3,11 @@
 這是專為micro:bit提供的搖桿積木\
 This is the JoyStick blocks for micro:bit
 
+## Author
+Liou Zheng-Ji\
+劉正吉\
+[link to myPage!](https://sites.google.com/jes.mlc.edu.tw/ljj/)
+
 ## Circuit
 ![image](circuit.png)
 
